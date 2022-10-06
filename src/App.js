@@ -13,27 +13,28 @@ import {
   Routes
 } from "react-router-dom";
 
-//App Class
+
+//App Component
 class App extends React.Component {
   render() {
-    return(
+    return (
+      //Routing 
       <Router>
-    <div className="App">
-      {/* Navbar Component */}
-      <NavBar></NavBar>
-      {/* Routing */}
-      <Routes>
-        <Route path='/' element={<Content></Content>} exact></Route>
-        <Route path='/read' element={<Header />} exact></Route>
-        <Route path='/create' element={<Footer />} exact></Route>
-      </Routes>
-      {/*<Header></Header>
+        <div className="App">
+          {/* Navbar Component */}
+          <NavBar></NavBar>
+          <Routes>
+            <Route path='/' element={<Content></Content>} exact></Route>
+            <Route path='/read' element={<Header />} exact></Route>
+            <Route path='/create' element={<Footer />} exact></Route>
+          </Routes>
+          {/*<Header></Header>
       <Content></Content>
     <Footer></Footer>*/}
-    </div>
-    </Router>
-  );
-}
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

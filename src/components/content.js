@@ -1,6 +1,7 @@
 //Imports
 import React from "react";
 
+//Content Component
 export class Content extends React.Component {
     render() {
         return (
