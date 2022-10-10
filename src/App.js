@@ -2,8 +2,6 @@
 import './App.css';
 import React from 'react';
 import { Content } from './components/content';
-import { Header } from './components/header';
-import { Footer } from './components/footer';
 import { NavBar } from './components/navBar';
 import {
   BrowserRouter as Router,
@@ -12,6 +10,8 @@ import {
   Link,
   Routes
 } from "react-router-dom";
+import { Read } from './components/read';
+import { Create } from './components/create';
 
 
 //App Component
@@ -25,8 +25,9 @@ class App extends React.Component {
           <NavBar></NavBar>
           <Routes>
             <Route path='/' element={<Content></Content>} exact></Route>
-            <Route path='/read' element={<Header />} exact></Route>
-            <Route path='/create' element={<Footer />} exact></Route>
+            <Route path='/read' element={<Read />} exact></Route>
+            <Route path='/create' element={<Create />} exact></Route>
+
           </Routes>
           {/*<Header></Header>
       <Content></Content>
