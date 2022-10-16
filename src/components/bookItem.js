@@ -1,10 +1,14 @@
+//Imports
 import React from "react";
 import Card from 'react-bootstrap/Card';
+
 //BookItem Component
 export class BookItem extends React.Component {
+    //Render Method
     render() {
         return (
             <div>
+                {/* Bootstrap Card */}
                 <Card>
                     <Card.Header>{this.props.book.title}</Card.Header>
                     <Card.Body>

@@ -3,6 +3,7 @@ import React from "react";
 
 //Footer Component
 export class Footer extends React.Component {
+    //Render method
     render() {
         return (
             <div>

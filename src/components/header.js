@@ -3,6 +3,7 @@ import React from "react";
 
 //Header Component
 export class Header extends React.Component {
+    //Render method
     render() {
         return (
             <div>

@@ -1,8 +1,11 @@
+//Imports
 import React from "react";
 import { Books } from "./books";
 
+//Read Component
 export class Read extends React.Component {
 
+    //State
     state = {
         books: [
             {
@@ -47,6 +50,7 @@ export class Read extends React.Component {
 
     }
 
+    //Render Method
     render() {
         return (
             <div>

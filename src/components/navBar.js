@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Navbar Component
 export class NavBar extends React.Component {
+    //Render method
     render() {
         return (
             <div>

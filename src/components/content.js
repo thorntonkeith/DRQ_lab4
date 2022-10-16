@@ -3,6 +3,7 @@ import React from "react";
 
 //Content Component
 export class Content extends React.Component {
+    //Render method
     render() {
         return (
             <div>
